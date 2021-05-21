@@ -1,0 +1,25 @@
+doctype html
+html(lang='tr')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+    integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    title Eşleşmeler
+    style(type='text/css').
+  body(style='margin:0; padding:64px; background-color:#F2F2F2;')
+    center
+      table.table.table-striped(style='width:100%', border='1')
+        thead
+            tr
+              th Takım
+              th Mentor
+              th Saat
+        tbody
+          each task in tasks
+              tr(style=task[0]==''?'background-color:#000;':'')
+                td #{task[0]}
+                td #{task[1][0]}
+                td #{task[1][1]}

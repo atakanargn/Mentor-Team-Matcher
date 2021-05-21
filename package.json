@@ -1,0 +1,21 @@
+{
+  "name": "mentor-team-matcher",
+  "version": "0.0.1",
+  "description": "for u4s.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "keywords": [
+    "u4s",
+    "mentor",
+    "matcher"
+  ],
+  "author": "Atakan Argın",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
